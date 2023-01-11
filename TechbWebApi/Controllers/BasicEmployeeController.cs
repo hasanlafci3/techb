@@ -53,12 +53,12 @@ namespace TechbWebApi.Controllers
             var isOlderThanThirdyYears = employee.DateOfBirth <= dateBeforeThirtyYears;
             var hourlySalary = (double)value;
 
-            if (employee.Name == "Recep")
+            if (employee.Name == "Denny")
             {
                 return ValidationResult.Success;
             }
 
-            if (employee.Name == "Patika")
+            if (employee.Name == "Henry")
             {
                 return new ValidationResult(GetErrorMessage());
             }
