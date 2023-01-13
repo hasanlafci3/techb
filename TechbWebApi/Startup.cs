@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +12,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Techb.Data.Context;
+using Techb.Data.Repository.Abstract;
+using Techb.Data.Repository.Concrete;
 
 namespace TechbWebApi
 {
@@ -23,7 +27,6 @@ namespace TechbWebApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMemoryCache();
@@ -34,6 +37,15 @@ namespace TechbWebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TechbWebApi", Version = "v1" });
             });
+
+
+            var dbConfig = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(dbConfig));
+
+
+            // inject 
+            services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IBookRepository, BookRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

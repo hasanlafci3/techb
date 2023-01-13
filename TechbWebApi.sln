@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechbWebApi", "TechbWebApi\TechbWebApi.csproj", "{B9DCDDF4-94C0-42AF-AB92-84DBD3BC63AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechbWebApi", "TechbWebApi\TechbWebApi.csproj", "{B9DCDDF4-94C0-42AF-AB92-84DBD3BC63AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techb.Data", "Techb.Data\Techb.Data.csproj", "{6705BDA1-4190-4A23-A53A-6A051C8FB442}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B9DCDDF4-94C0-42AF-AB92-84DBD3BC63AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9DCDDF4-94C0-42AF-AB92-84DBD3BC63AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9DCDDF4-94C0-42AF-AB92-84DBD3BC63AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6705BDA1-4190-4A23-A53A-6A051C8FB442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6705BDA1-4190-4A23-A53A-6A051C8FB442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6705BDA1-4190-4A23-A53A-6A051C8FB442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6705BDA1-4190-4A23-A53A-6A051C8FB442}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
