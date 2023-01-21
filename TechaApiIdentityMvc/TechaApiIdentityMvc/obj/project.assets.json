@@ -7659,11 +7659,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RepoRy\\Patika\\100_techa\\TechaApiIdentityMvc\\TechaApiIdentityMvc\\TechaApiIdentityMvc.csproj",
+      "projectUniqueName": "C:\\RepoRy\\techb\\TechaApiIdentityMvc\\TechaApiIdentityMvc\\TechaApiIdentityMvc.csproj",
       "projectName": "TechaApiIdentityMvc",
-      "projectPath": "C:\\RepoRy\\Patika\\100_techa\\TechaApiIdentityMvc\\TechaApiIdentityMvc\\TechaApiIdentityMvc.csproj",
+      "projectPath": "C:\\RepoRy\\techb\\TechaApiIdentityMvc\\TechaApiIdentityMvc\\TechaApiIdentityMvc.csproj",
       "packagesPath": "C:\\Users\\Recep\\.nuget\\packages\\",
-      "outputPath": "C:\\RepoRy\\Patika\\100_techa\\TechaApiIdentityMvc\\TechaApiIdentityMvc\\obj\\",
+      "outputPath": "C:\\RepoRy\\techb\\TechaApiIdentityMvc\\TechaApiIdentityMvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Recep\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -25,11 +25,7 @@ namespace TechaApiIdentityMvc.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> logger;
         private readonly IEmailSender emailSender;
 
-        public RegisterModel(
-            UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager,
-            ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+        public RegisterModel(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ILogger<RegisterModel> logger, IEmailSender emailSender)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
@@ -99,7 +95,16 @@ namespace TechaApiIdentityMvc.Areas.Identity.Pages.Account
             ExternalLogins = (await signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.UserName, Email = Input.Email, FullName = Input.FullName, Address = Input.Address, Gender = Input.Gender, DateOfBirth = Input.DateOfBirth };
+                var user = new ApplicationUser
+                {
+                    UserName = Input.UserName,
+                    Email = Input.Email,
+                    FullName = Input.FullName,
+                    Address = Input.Address,
+                    Gender = Input.Gender,
+                    DateOfBirth = Input.DateOfBirth
+                };
+
                 var result = await userManager.CreateAsync(user, Input.Password);
                 var addRoleToUser = await userManager.AddToRoleAsync(user, Input.Role);
                 if (result.Succeeded && addRoleToUser.Succeeded)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iiaPVPmqnPepkf7sw/ffvTJVC8pioI+LfEUVlDZnX8apcP6RwpjUzm0UD9O1BuKjV5QqadFruSQ1JETNwEI51g==",
+  "dgSpecHash": "9YNrUtTbzo3vb4c9dR2HJw3ViimDB4GAzlReBDqaR9iZTtUxB5BtbeYeShuXptMgiWPSQeKqHgixzXGNJ+8Raw==",
   "success": true,
-  "projectFilePath": "C:\\RepoRy\\Patika\\100_techa\\TechaApiIdentityMvc\\TechaApiIdentityMvc\\TechaApiIdentityMvc.csproj",
+  "projectFilePath": "C:\\RepoRy\\techb\\TechaApiIdentityMvc\\TechaApiIdentityMvc\\TechaApiIdentityMvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Recep\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Recep\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",

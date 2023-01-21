@@ -19,9 +19,7 @@ namespace TechaApiIdentityMvc.Areas.Identity.Pages.Account
         private readonly SignInManager<ApplicationUser> signInManager;
         private readonly ILogger<LoginModel> logger;
 
-        public LoginModel(SignInManager<ApplicationUser> signInManager, 
-            ILogger<LoginModel> logger,
-            UserManager<ApplicationUser> userManager)
+        public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger, UserManager<ApplicationUser> userManager)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
@@ -41,7 +39,7 @@ namespace TechaApiIdentityMvc.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            public string UserName { get; set; }
+            public string UserName { get; set; } =  "57df6ed8-be72-43c3-b26e-3aeca56427e8";
 
             [Required]
             [DataType(DataType.Password)]
@@ -49,6 +47,7 @@ namespace TechaApiIdentityMvc.Areas.Identity.Pages.Account
 
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
+
         }
 
         public async Task OnGetAsync(string returnUrl = null)
