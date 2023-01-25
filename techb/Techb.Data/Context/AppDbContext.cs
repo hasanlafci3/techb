@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Techb.Data.Model;
 
 namespace Techb.Data.Context
@@ -18,6 +13,7 @@ namespace Techb.Data.Context
         // db set 
         public DbSet<Account> Account { get; set; }
         public DbSet<Book> Book { get; set; }
+        public DbSet<Store> Store { get; set; }
 
 
     }

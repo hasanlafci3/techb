@@ -15,6 +15,8 @@ using System.Threading.Tasks;
 using Techb.Data.Context;
 using Techb.Data.Repository.Abstract;
 using Techb.Data.Repository.Concrete;
+using Techb.Data.UnitOfWork.Abstract;
+using Techb.Data.UnitOfWork.Concrete;
 
 namespace TechbWebApi
 {
@@ -46,6 +48,8 @@ namespace TechbWebApi
             // inject 
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IBookRepository, BookRepository>();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

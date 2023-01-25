@@ -36,14 +36,12 @@ namespace Techb.Data.Repository.Concrete
         public async Task InsertAsync(Entity entity)
         {
             await entities.AddAsync(entity);
-            Context.SaveChanges();
         }
 
         public void RemoveAsync(Entity entity)
         {
             entities.Remove(entity);
             //entity.GetType().GetProperty("IsDeleted").SetValue(entity, true);
-            Context.SaveChanges();
         }
 
         public virtual IEnumerable<Entity> Where(System.Linq.Expressions.Expression<Func<Entity, bool>> where)
@@ -54,7 +52,6 @@ namespace Techb.Data.Repository.Concrete
         public void Update(Entity entity)
         {
             entities.Update(entity);
-            Context.SaveChanges();
         }
     }
 }
